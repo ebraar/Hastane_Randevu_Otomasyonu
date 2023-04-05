@@ -40,7 +40,6 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.BtnGuncelle = new System.Windows.Forms.Button();
             this.BtnDuyurular = new System.Windows.Forms.Button();
-            this.BtnInternet = new System.Windows.Forms.Button();
             this.BtnCikis = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -138,7 +137,6 @@
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.BtnCikis);
-            this.groupBox4.Controls.Add(this.BtnInternet);
             this.groupBox4.Controls.Add(this.BtnDuyurular);
             this.groupBox4.Controls.Add(this.BtnGuncelle);
             this.groupBox4.Location = new System.Drawing.Point(12, 315);
@@ -166,18 +164,9 @@
             this.BtnDuyurular.Text = "Duyurular";
             this.BtnDuyurular.UseVisualStyleBackColor = true;
             // 
-            // BtnInternet
-            // 
-            this.BtnInternet.Location = new System.Drawing.Point(16, 87);
-            this.BtnInternet.Name = "BtnInternet";
-            this.BtnInternet.Size = new System.Drawing.Size(134, 35);
-            this.BtnInternet.TabIndex = 3;
-            this.BtnInternet.Text = "İnternet";
-            this.BtnInternet.UseVisualStyleBackColor = true;
-            // 
             // BtnCikis
             // 
-            this.BtnCikis.Location = new System.Drawing.Point(156, 87);
+            this.BtnCikis.Location = new System.Drawing.Point(92, 86);
             this.BtnCikis.Name = "BtnCikis";
             this.BtnCikis.Size = new System.Drawing.Size(118, 35);
             this.BtnCikis.TabIndex = 4;
@@ -221,7 +210,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button BtnCikis;
-        private System.Windows.Forms.Button BtnInternet;
         private System.Windows.Forms.Button BtnDuyurular;
         private System.Windows.Forms.Button BtnGuncelle;
     }
