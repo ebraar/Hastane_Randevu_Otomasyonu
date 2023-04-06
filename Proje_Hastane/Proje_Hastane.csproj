@@ -132,6 +132,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sqlbaglantisi.cs" />
     <EmbeddedResource Include="FrmBilgiDuzenleme.resx">
       <DependentUpon>FrmBilgiDuzenleme.cs</DependentUpon>
     </EmbeddedResource>

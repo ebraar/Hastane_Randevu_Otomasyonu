@@ -16,5 +16,10 @@ namespace Proje_Hastane
         {
             InitializeComponent();
         }
+
+        private void FrmDoktorPaneli_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

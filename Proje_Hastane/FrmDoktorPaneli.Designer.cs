@@ -170,7 +170,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(591, 349);
+            this.ClientSize = new System.Drawing.Size(589, 349);
             this.Controls.Add(this.BtnGuncelle);
             this.Controls.Add(this.BtnSil);
             this.Controls.Add(this.BtnEkle);
@@ -189,6 +189,7 @@
             this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "FrmDoktorPaneli";
             this.Text = "FrmDoktorPaneli";
+            this.Load += new System.EventHandler(this.FrmDoktorPaneli_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
