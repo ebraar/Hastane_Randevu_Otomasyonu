@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Proje_Hastane
 {
@@ -15,6 +16,13 @@ namespace Proje_Hastane
         public FrmHastaKayit()
         {
             InitializeComponent();
+        }
+
+        sqlbaglantisi bgl = new sqlbaglantisi();
+
+        private void BtnKayitYap_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("insert into Tbl_Hastalar(HastaAd, HastaSoyad, HastaTC, HastaTelefon, HastaSifre, HastaCinsiyet) values (@p1,@p2,@p3,@p4,@p5,@p6)",bgl.baglanti());
         }
     }
 }
