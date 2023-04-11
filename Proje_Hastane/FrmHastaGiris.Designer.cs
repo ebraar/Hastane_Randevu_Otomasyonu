@@ -81,6 +81,7 @@
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(171, 31);
             this.TxtSifre.TabIndex = 4;
+            this.TxtSifre.UseSystemPasswordChar = true;
             // 
             // LnkUyeOl
             // 
@@ -101,6 +102,7 @@
             this.BtnGirisYap.TabIndex = 6;
             this.BtnGirisYap.Text = "Giriş Yap";
             this.BtnGirisYap.UseVisualStyleBackColor = true;
+            this.BtnGirisYap.Click += new System.EventHandler(this.BtnGirisYap_Click);
             // 
             // FrmHastaGiris
             // 
