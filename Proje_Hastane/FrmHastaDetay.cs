@@ -81,7 +81,6 @@ namespace Proje_Hastane
             FrmBilgiDuzenleme fr = new FrmBilgiDuzenleme();
             fr.TCno = LblTC.Text;
             fr.Show();
-
         }
     }
 }
