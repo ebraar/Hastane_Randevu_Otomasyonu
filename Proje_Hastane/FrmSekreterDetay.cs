@@ -110,5 +110,15 @@ namespace Proje_Hastane
             FrmRandevuListesi frl = new FrmRandevuListesi();
             frl.Show();
         }
+
+        private void BtnGuncelle_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void BtnDuyurular_Click(object sender, EventArgs e)
+        {
+            FrmDuyurular fr = new FrmDuyurular();
+            fr.Show();
+        }
     }
 }

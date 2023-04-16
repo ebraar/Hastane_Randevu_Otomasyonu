@@ -27,11 +27,9 @@ namespace Proje_Hastane
             dataGridView1.DataSource = dt;
         }
 
-        public int secilen;
-
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            secilen = dataGridView1.SelectedCells[0].RowIndex;
+            
         }
     }
 }
