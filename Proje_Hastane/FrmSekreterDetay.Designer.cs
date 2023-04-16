@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSekreterDetay));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.LblAdSoyad = new System.Windows.Forms.Label();
             this.LblTC = new System.Windows.Forms.Label();
@@ -366,6 +367,7 @@
             this.BtnRandevuListe.TabIndex = 17;
             this.BtnRandevuListe.Text = "Randevu Liste";
             this.BtnRandevuListe.UseVisualStyleBackColor = true;
+            this.BtnRandevuListe.Click += new System.EventHandler(this.BtnRandevuListe_Click);
             // 
             // BtnBransPanel
             // 
@@ -375,6 +377,7 @@
             this.BtnBransPanel.TabIndex = 16;
             this.BtnBransPanel.Text = "Branş Paneli";
             this.BtnBransPanel.UseVisualStyleBackColor = true;
+            this.BtnBransPanel.Click += new System.EventHandler(this.BtnBransPanel_Click);
             // 
             // BtnDoktorPanel
             // 
@@ -399,6 +402,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmSekreterDetay";
             this.Text = "FrmSekreterDetay";

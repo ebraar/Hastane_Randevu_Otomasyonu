@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBrans));
             this.BtnGuncelle = new System.Windows.Forms.Button();
             this.BtnSil = new System.Windows.Forms.Button();
             this.BtnEkle = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.TxtAd = new System.Windows.Forms.TextBox();
+            this.TxtBrans = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Txtid = new System.Windows.Forms.TextBox();
@@ -48,6 +49,7 @@
             this.BtnGuncelle.TabIndex = 27;
             this.BtnGuncelle.Text = "Güncelle";
             this.BtnGuncelle.UseVisualStyleBackColor = false;
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // BtnSil
             // 
@@ -58,6 +60,7 @@
             this.BtnSil.TabIndex = 26;
             this.BtnSil.Text = "Sil";
             this.BtnSil.UseVisualStyleBackColor = false;
+            this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
             // BtnEkle
             // 
@@ -68,21 +71,24 @@
             this.BtnEkle.TabIndex = 25;
             this.BtnEkle.Text = "Ekle";
             this.BtnEkle.UseVisualStyleBackColor = false;
+            this.BtnEkle.Click += new System.EventHandler(this.BtnEkle_Click);
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(250, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(309, 181);
             this.dataGridView1.TabIndex = 24;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // TxtAd
+            // TxtBrans
             // 
-            this.TxtAd.Location = new System.Drawing.Point(89, 69);
-            this.TxtAd.Name = "TxtAd";
-            this.TxtAd.Size = new System.Drawing.Size(155, 31);
-            this.TxtAd.TabIndex = 22;
+            this.TxtBrans.Location = new System.Drawing.Point(89, 69);
+            this.TxtBrans.Name = "TxtBrans";
+            this.TxtBrans.Size = new System.Drawing.Size(155, 31);
+            this.TxtBrans.TabIndex = 22;
             // 
             // label3
             // 
@@ -113,19 +119,24 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(578, 203);
             this.Controls.Add(this.BtnGuncelle);
             this.Controls.Add(this.BtnSil);
             this.Controls.Add(this.BtnEkle);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.TxtAd);
+            this.Controls.Add(this.TxtBrans);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Txtid);
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
             this.Name = "FrmBrans";
-            this.Text = "FrmBrans";
+            this.Text = "Branş Paenli";
+            this.Load += new System.EventHandler(this.FrmBrans_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -138,7 +149,7 @@
         private System.Windows.Forms.Button BtnSil;
         private System.Windows.Forms.Button BtnEkle;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox TxtAd;
+        private System.Windows.Forms.TextBox TxtBrans;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox Txtid;
