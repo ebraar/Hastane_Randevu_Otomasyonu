@@ -111,10 +111,6 @@ namespace Proje_Hastane
             frl.Show();
         }
 
-        private void BtnGuncelle_Click(object sender, EventArgs e)
-        {
-        }
-
         private void BtnDuyurular_Click(object sender, EventArgs e)
         {
             FrmDuyurular fr = new FrmDuyurular();
